@@ -1,0 +1,286 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+body {
+    max-width: 1150px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* nav style */
+
+nav {
+
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+
+}
+
+.nav-title {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li {
+    font-weight: 600;
+}
+
+/* section-1 style */
+
+.section-1 {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-1-info p {
+    margin: 16px 0;
+}
+
+.section-1-title {
+    font-weight: 700;
+    font-size: 52px;
+}
+
+.section-1-img {
+    background-image: url(./images/Circle\ design.svg);
+    padding: 30px 33px 30px 2px;
+
+}
+
+.section-1-btn {
+    width: 196px;
+    height: 44px;
+    background-color: #E02C6D;
+    border-radius: 41px;
+    border: none;
+}
+
+/* end banner section */
+
+/* start logos section */
+.logos {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+/* end logos section */
+
+/* start popular collection section style */
+
+.popular-collection {
+    margin-top: 100px;
+}
+
+.popular-collection-title {
+    text-align: center;
+    margin-bottom: 60px;
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.collection-boxes {
+    background-color: rgba(170, 170, 170, 0.082);
+    padding: 15px;
+    width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.collection-box {
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.box {
+    padding: 15PX;
+
+}
+
+.box img {
+    width: 270px;
+    height: 216px;
+
+}
+
+.ratings {
+    display: flex;
+
+}
+
+.ratings p {
+    margin-left: 10px;
+}
+
+.fa-star,
+.fa-star-half-stroke {
+    color: yellow;
+}
+
+.box h1 {
+    font-weight: 500;
+    font-size: 28px;
+}
+
+.price {
+    font-weight: 400;
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.box h3 {
+    color: #787885;
+}
+
+/* end popular collection section style */
+
+/* start feature style */
+.feature {
+    background-color: #ffffff;
+    width: 1000px;
+    height: 270px;
+    margin: 100px auto;
+    display: flex;
+    gap: 70px;
+    align-items: center;
+}
+
+.feature-img {
+    height: 100%;
+}
+
+.feature-details {
+    margin: 13px 0;
+    color: #6C6C6C;
+}
+
+.feature-title {
+    font-weight: 700;
+    font-size: 38px;
+}
+
+.feature-btn {
+    width: 155px;
+    height: 44px;
+    background-color: #E02C6D;
+    color: #ffffff;
+    border: none;
+
+}
+
+.fa-arrow-right {
+    padding-left: 7px;
+}
+
+/* end feature product */
+
+/* start footer section */
+footer {
+    background-color: #0a0826;
+    
+    width: 100%;
+    height: 12rem;
+    color: white;
+    text-align: center;
+
+
+}
+
+.footer-info {
+    padding-top: 2rem;
+
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+    gap: 20px;
+}
+
+/* end footer section */
+
+
+
+
+
+
+
+.hide{
+    display: none;
+}
+
+
+@media  screen and (max-width:576px) {
+    /* .nav-item{
+        display: none;
+    } */
+    .nav-title{
+        padding-left: 9rem;
+    }
+    .section-1{
+        flex-direction: column-reverse;
+    }
+    .section-1-info{
+       text-align: center;
+    }
+    .logos{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .collection-boxes{
+        grid-template-columns: repeat(1, 1fr);
+        width: 80%;
+        
+    }
+    .collection-box{
+        width: 100%;
+    
+    }
+    .box img{
+        width: 100%;
+    }
+    .feature{
+        flex-direction: column-reverse;
+        width: 100%;
+        margin-top: 350px;
+        
+    }
+    .feature-img img{
+       
+       justify-content: center;
+    }
+    .feature-info{
+        text-align: center;
+        margin-top: 200px;
+        width: 100%;
+    }
+    .hidden{
+        display: none;
+    }
+    .nav-li{
+        padding-right: 15px;
+    }
+}
